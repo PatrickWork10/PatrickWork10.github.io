@@ -31,17 +31,27 @@ header{
 
 .section{
   padding:50px 20px;
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
 }
 
 .card{
-  display:inline-block;
-  width:250px;
-  margin:15px;
+  width:260px;
+  height:180px;            /* forces equal height */
   padding:20px;
   background:white;
   border-radius:10px;
   box-shadow:0 4px 12px rgba(0,0,0,0.1);
+
+  display:flex;            /* center content vertically */
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
 }
+
 </style>
 </head>
 
@@ -73,5 +83,6 @@ header{
 
 </body>
 </html>
+
 
 
