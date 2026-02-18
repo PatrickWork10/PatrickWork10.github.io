@@ -1,29 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Patrick Website</title>
-  <style>
-    body{
-      font-family: Arial;
-      text-align:center;
-      margin-top:100px;
-      background:#f4f6fb;
-    }
-    .card{
-      background:white;
-      padding:40px;
-      border-radius:12px;
-      width:420px;
-      margin:auto;
-      box-shadow:0 10px 30px rgba(0,0,0,.15);
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OICPlaybook</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Segoe UI, Arial;
+    background:#f5f7fb;
+}
+
+header{
+    background:#0b3d91;
+    color:white;
+    padding:18px 40px;
+    font-size:22px;
+    font-weight:600;
+}
+
+nav{
+    float:right;
+    font-size:15px;
+    margin-top:4px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    opacity:.9;
+}
+
+.hero{
+    padding:70px 20px;
+    text-align:center;
+    background:white;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#555;
+    font-size:18px;
+}
+
+.container{
+    max-width:1000px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+.post{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 4px 14px rgba(0,0,0,.08);
+    transition:.2s;
+}
+
+.post:hover{
+    transform:translateY(-4px);
+}
+
+.post h2{
+    margin-top:0;
+    color:#0b3d91;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#0b3d91;
+    color:white;
+    margin-top:60px;
+}
+</style>
 </head>
+
 <body>
-  <div class="card">
-    <h1>🎉 My Website is Live</h1>
-    <p>Hosted for FREE using GitHub Pages</p>
-    <p>Owner: Patrick</p>
-  </div>
+
+<header>
+OICPlaybook
+<nav>
+<a href="#">Home</a>
+<a href="#">Articles</a>
+<a href="#">About</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Oracle Integration Cloud Knowledge Hub</h1>
+<p>Practical guides, real fixes, and architecture patterns for OIC developers</p>
+</section>
+
+<div class="container">
+
+<div class="post">
+<h2>Understanding OIC Lookups (Complete Guide)</h2>
+<p>Learn how lookups actually work internally and how to avoid mapping failures in production integrations.</p>
+</div>
+
+<div class="post">
+<h2>Fixing Stage File Read Failure in OIC</h2>
+<p>Common reasons your stage file action fails and how to debug namespaces and schema mismatches.</p>
+</div>
+
+<div class="post">
+<h2>OIC Performance Optimization Tips</h2>
+<p>Real performance improvements that reduce execution time and avoid throttling limits.</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 OICPlaybook — Oracle Integration Cloud Blog
+</footer>
+
 </body>
 </html>
+
